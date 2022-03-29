@@ -89,9 +89,9 @@ if (isset($_POST['login_user'])) {
         //header("location: inscription.php");
     } 
   } else {
-    echo "username userpassword given.<br>";
     $username = test_input($_POST['username']);
     $user_password = test_input($_POST['password']);
+    echo "username [" . $username . "]<br> userpassword [" . $user_password . "]<br>";
   }
     
     if (sizeof($errors) == 0) {
