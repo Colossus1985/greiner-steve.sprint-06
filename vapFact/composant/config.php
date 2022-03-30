@@ -36,4 +36,4 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-?>3
+?>
