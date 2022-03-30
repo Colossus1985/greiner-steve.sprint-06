@@ -27,7 +27,7 @@ try {
     // prod configuration
     if (strcmp($_SERVER['ENVIRONMENT_TYPE'], "production") == 0) {
         $bdd = new PDO(
-            'mysql:host=109.234.164.161;dbname=sc1lgvu9627_rozar-fabien.sprint-06;charset=utf8',
+            'mysql:host=109.234.164.161;dbname=sc1lgvu9627_greiner-steve.sprint-06;charset=utf8',
             $_SERVER['DB_USER'],
             $_SERVER['DB_PASSWORD']
         );
