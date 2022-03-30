@@ -9,35 +9,39 @@ if (isset($_POST['submit_modif_prod'])) {
     if (!empty($_POST['new_window'])) {
         $new_discription = test_input_stock_detail($_POST['new_window']);} else {$new_discription = $_POST['old_window'];}
         
-    if (isset($_POST['new_stock'])) {
-        if (isset($_POST['new_stock']) && $_POST['new_stock'] == 0) {
-            $new_stock = 0;
-        } else {
-            $new_stock = $_POST['new_stock'];
-        } 
-    } elseif (!isset($_POST['new_stock']) && $_POST['old_stock'] == 0) {
+    if (isset($_POST['new_stock']) && $_POST['new_stock'] == 0) {
+        $new_stock = 0;
+    } else {
+        $new_stock = $_POST['new_stock'];
+    } 
+    if (!isset($_POST['new_stock']) && $_POST['old_stock'] == 0) {
             $new_stock = 0;
     } else {
         $new_stock = $_POST['old_stock'] ;
     }
 
-    if (isset($_POST['new_price_buy'])) {
-        if ($_POST['new_price_buy'] == 0) {
-            $price = (int)$_POST['new_price_buy'];
-            $new_price_buy = number_format($price,2);
-        } else {
-         $new_price_buy = number_format($_POST['new_price_buy'],2);
-        }
+    if (isset($_POST['new_price_buy']) && $_POST['new_price_buy'] == 0) {
+        $new_price_buy = 0;
+    } else {
+        $new_price_buy = number_format($_POST['new_price_buy'],2);
+    } 
+    if (!isset($_POST['new_price_buy']) && $_POST['old_price_buy'] == 0) {
+            $new_price_buy = 0;
+    } else {
+        $new_price_buy = $_POST['old_price_buy'] ;
     }
 
-    if (isset($_POST['new_price_sell'])) {
-        if ($_POST['new_price_sell'] == 0) {
-            $price = (int)$_POST['new_price_sell'];
-            $new_price_sell = number_format($price,2);
-        } else {
+    if (isset($_POST['new_price_sell']) && $_POST['new_price_sell'] == 0) {
+        $new_price_sell = 0;
+    } else {
         $new_price_sell = number_format($_POST['new_price_sell'],2);
-        }
+    } 
+    if (!isset($_POST['new_price_sell']) && $_POST['old_price_sell'] == 0) {
+            $new_price_sell = 0;
+    } else {
+        $new_price_sell = $_POST['old_price_sell'] ;
     }
+
     if (isset($_POST['new_type'])) {
         $new_type = $_POST['new_type'];} else {$new_type = $_POST['old_type'];}
 
