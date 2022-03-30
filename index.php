@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark px-md-5">
       <div class="container-fluid ps-md-0"> 
         <div class = " d-flex flex-row justify-content-around align-items-center">
-          <a class = "text-white me-3" ><strong><?php echo $_SESSION['username']; ?></strong></a>
+          <a class = "text-white me-3" href = "vapFact/modifPerso.php"><strong><?php echo $_SESSION['username']; ?></strong></a>
           <a href="index.php?logout='1'" class = "text-light text-decoration-none">Logout</a>
         </div>
       </div>

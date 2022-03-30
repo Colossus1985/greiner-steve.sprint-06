@@ -10,7 +10,7 @@
           </div>
           <div id = "div_add_prod" class = "d-flex mx-3 mt-4">
           <input class = "shadow shadow btn btn-success px-3 m-3 flex-fill border border-1 rounded-pill" 
-                  type="submit" name = "submitNew" value= "ADD NEW" onclick="delet_all()">
+                  type="submit" name = "submitNew" value= "ADD NEW REFERENCE" onclick="delet_all()">
           </div>
         </form>
       </div>  
