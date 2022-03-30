@@ -20,6 +20,7 @@
                 <a class="navbar-brand text-white" href="modifProd.php">Modification Stock</a>
                 <a class="navbar-brand text-white" href="recepProd.php">Reception</a>
                 <a class="navbar-brand text-white" href="modifPerso.php">Personnel</a>
+                <a class="navbar-brand text-white" href="help.php">Help</a>
             </div>
         </div>
         <div class = " d-flex flex-row justify-content-around align-items-center">
