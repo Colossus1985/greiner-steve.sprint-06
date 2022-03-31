@@ -1,5 +1,5 @@
 <!-- <div id = "div_temp" class = "p-0 m-0"> -->
-<div class = "pt-3 pe-3 ps-3 mx-5 mb-4 mt-2">
+<div class = "pt-3 px-3 mx-5 mb-4 mt-2 overflow-scroll">
     <table class="table table-striped table-bordered table-borderless table-hover text-nowrap rouded-3">
         <thead class = "bg-info">
             <form method = "POST" action = "viewStock.php">

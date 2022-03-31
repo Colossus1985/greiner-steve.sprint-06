@@ -105,6 +105,9 @@ $prod_ref = "";
       ?>        
   
     <script type="text/javascript" src="../js/vapFactModifBDD.js"></script>
+    <?php
+        include 'composant/footer.php';
+    ?>
 </body>
 </html>
 

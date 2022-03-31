@@ -85,7 +85,7 @@ if (isset($_POST['submit_form_ref_prod'])) {
                             <div class = "d-flex flex-column flex-fill pt-4">
                                 <div class = "d-flex flex-column flex-fill pt-5">
                                     <input class="fs-4 flex-fill mt-5 px-3 shadow justify-content-center d-flex m-2 border border-1 border-primary rounded-pill"
-                                            name = "recep_stock" type = "number" placeholder = "quantity to receip">
+                                            name = "recep_stock" type = "number" placeholder = "quantity to receive">
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,9 @@ if (isset($_POST['add_stock'])) {
     }
 }
 ?>   
-
+    <?php
+    include 'composant/footer.php';
+    ?>
     <script type="text/javascript" src="../js/vapFactModifBDD.js"></script>
   </body>
 </html>

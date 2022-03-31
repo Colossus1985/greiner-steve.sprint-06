@@ -66,6 +66,9 @@ $table_name = "`".$_SESSION['id']."`";
         include 'exec/deleteProdExec.php';
       }
 ?>
+    <?php
+    include 'composant/footer.php';
+    ?>
     <script type="text/javascript" src="../js/vapFactModifBDD.js"></script>
   </body>
 </html>

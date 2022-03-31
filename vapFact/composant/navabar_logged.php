@@ -16,11 +16,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="mt-1 d-flex justify-content-start">
-                <a class="navbar-brand text-white" href="viewStock.php">Show Stock</a>
-                <a class="navbar-brand text-white" href="modifProd.php">Modification Stock</a>
-                <a class="navbar-brand text-white" href="recepProd.php">Reception</a>
-                <a class="navbar-brand text-white" href="modifPerso.php">Personnel</a>
-                <a class="navbar-brand text-white" href="help.php">Help</a>
+                <a class="navbar-brand text-white" href="viewStock.php">Show</a>
+                <a class="navbar-brand text-white ms-3" href="modifProd.php">Modify</a>
+                <a class="navbar-brand text-white ms-3" href="recepProd.php">Reception</a>
+                <a class="navbar-brand text-white ms-3" href="modifPerso.php">Personnel</a>
+                <a class="navbar-brand text-white ms-3" href="help.php">Help</a>
             </div>
         </div>
         <div class = " d-flex flex-row justify-content-around align-items-center">
