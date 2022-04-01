@@ -13,64 +13,64 @@ if (isset($_POST['submit_modif_prod'])) {
 
 
         if ($_POST['new_stock'] != "" && $_POST['new_stock'] != null) {
-            echo "new_stock setted<br>";
+            // echo "new_stock setted<br>";
             if (!empty($_POST['new_stock']) && $_POST['new_stock'] == 0) {
-                echo "new_stock setted 0<br>";
+                // echo "new_stock setted 0<br>";
                 $new_stock = 0;
             } else {
-                echo "new_stock setted 1<br>";
+                // echo "new_stock setted 1<br>";
                 $new_stock = $_POST['new_stock'];
             } 
         } elseif ($_POST['new_stock'] == "" && $_POST['old_stock'] == 0) {
-                echo "new_stock not setted 0<br>";
+                // echo "new_stock not setted 0<br>";
                 $new_stock = 0;
         } else {
-            echo "new_stock not setted 1<br>";
+            // echo "new_stock not setted 1<br>";
             $new_stock = $_POST['old_stock'] ;
         }
-        echo "new_stock [".$new_stock."]<br><br>";
+        // echo "new_stock [".$new_stock."]<br><br>";
     
         if ($_POST['new_price_buy'] != "" && $_POST['new_price_buy'] != null) {
-            echo "new_price_buy setted<br>";
+            // echo "new_price_buy setted<br>";
             if ($_POST['new_price_buy'] == 0) {
-                echo "new_price_buy setted 0<br>";
+                // echo "new_price_buy setted 0<br>";
                 $new_price_buy = number_format(0,2);
             } else {
-                echo "new_price_buy setted 1<br>";
+                // echo "new_price_buy setted 1<br>";
                 $new_price_buy = number_format($_POST['new_price_buy'],2);
             }
         } elseif ($_POST['new_price_buy'] == "") {
-            echo "new_price_buy not setted <br>";
+            // echo "new_price_buy not setted <br>";
             if ($_POST['old_price_buy'] == 0) {
-                echo "new_price_buy not setted 0<br>";
+                // echo "new_price_buy not setted 0<br>";
                 $new_price_buy = number_format(0,2);
             } else {
-                echo "new_price_buy not setted 1<br>";
+                // echo "new_price_buy not setted 1<br>";
                 $new_price_buy = number_format($_POST['old_price_buy'],2);
             }
         }
-        echo "new_price_buy [".$new_price_buy."]<br><br>";
+        // echo "new_price_buy [".$new_price_buy."]<br><br>";
 
         if ($_POST['new_price_sell'] != "" && $_POST['new_price_sell'] != null) {
-            echo "new_price_sell setted<br>";
+            // echo "new_price_sell setted<br>";
             if ($_POST['new_price_sell'] == 0) {
-                echo "new_price_sell setted 0<br>";
+                // echo "new_price_sell setted 0<br>";
                 $new_price_sell = number_format(0,2);
             } else {
-                echo "new_price_sell setted 1<br>";
+                // echo "new_price_sell setted 1<br>";
                 $new_price_sell = number_format($_POST['new_price_sell'],2);
             }
         } elseif ($_POST['new_price_sell'] == "") {
-            echo "new_price_sell not setted<br>";
+            // echo "new_price_sell not setted<br>";
             if ($_POST['old_price_sell'] == 0) {
-                echo "new_price_sell not setted 0<br>";
+                // echo "new_price_sell not setted 0<br>";
                 $new_price_sell = number_format(0,2);
             } else {
-                echo "new_price_sell not setted 1<br>";
+                // echo "new_price_sell not setted 1<br>";
                 $new_price_sell = number_format($_POST['old_price_sell'],2);
             }
         }
-        echo "new_price_sell [".$new_price_sell."]<br><br>";
+        // echo "new_price_sell [".$new_price_sell."]<br><br>";
 
 
         // if (isset($_POST['new_price_buy'])) {
